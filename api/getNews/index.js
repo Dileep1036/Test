@@ -2,7 +2,7 @@ module.exports = async function (context, req) {
   context.log("Fetching news...");
 
   try {
-    const response = await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.NEWS_API_KEY}`);
+    const response = await fetch(`https://newsapi.org/v2/everything?q=tesla&from=2025-07-14&sortBy=publishedAt&apiKey=${process.env.NEWS_API_KEY}`);
     const data = await response.json();
 
     context.res = {
