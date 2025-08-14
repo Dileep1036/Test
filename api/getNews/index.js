@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 
 module.exports = async function (context, req) {
-    const apiKey = process.env.NEWS_API_KEY;
+    const apiKey = "b7200668806c4e2ca2dfdadd745dd139"
     const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
 
     try {
